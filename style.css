@@ -2,6 +2,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* root styles */
+
+:root{
+    font-size: 16px;
+    --heading-font: "Montserrat";
+    --text-font: "Courier New";
+    --main-color: #4338ca;
+    --secondary-color: #e0dff7;
+    --ascent-color: #419ddf;
+    --length-sm1: 0.25rem;  /*small length*/
+    --length-sm2: 0.5rem;
+    --length-sm3: 0.75rem;
+    --length-md1: 1rem;     /*medium length*/
+    --length-md2: 1.23rem;
+    --length-md3: 1.5rem;
+    --length-lg1: 2rem;     /*large length*/
+    --length-lg2: 3rem;
+    --length-lg3: 4rem;   
+    --space-1: 0.5rem;      /* 8px */
+    --space-2: 1rem;        /* 16px */
+    --space-3: 1.5rem;      /* 24px */
+    --space-4: 2rem;        /* 32px */
+    --space-5: 2.5rem;      /* 40px */
+    --space-6: 3rem;        /* 48px */
+}
+
+
 /*css resets */
 
 *{
@@ -10,24 +39,74 @@
     box-sizing: border-box;
 }
 
-a{
+a, a:hover, a:visited, a:active{
     text-decoration: none;
+    color: var(--main-color);
 }
 ul{
     list-style-type: none;
 }
 
-:root{
-    font-size: 16px;
-    --heading-font: "Montserrat";
-    --text-font: "Roboto";
-    --space-1: 8px;
-    --space-2: 16px;
-    --space-3: 24px;
-    --space-4: 32px;
-    --space-5: 40px;
+
+
+/* global style */
+
+html,body{
+    font-family: var(--text-font), sans-serif;
+
+}
+h1,h2{
+    text-align: center;
+    font-family: var(--heading-font), Courier;
+    /* font-size: var(--length-lg3); */
+    color: var(--main-color);
+    
 }
 
-body{
-    font-family: var(--text-font), sans-serif;
+h3,h4{
+    text-align: center;
+    font-family: var(--heading-font), Courier;
+    /* font-size: var(--length-lg2); */
+    color: var(--main-color);
+} 
+
+h5,h6{
+    text-align: center;
+    font-family: var(--heading-font), Courier;
+    /* font-size: var(--length-lg1); */
+    color: var(--main-color);
+} 
+
+/* p{
+    color: var(--main-color);
+} */
+
+/* text styles */
+.text--color__primary{
+    color: var(--main-color);
+}
+
+.text--color__secondary{
+    color: var(--secondary-color);
+}
+
+
+/* section styles */
+
+.primary--section{
+
+    margin: var(--space-2);
+    border-radius: 5px;
+    padding: var(--space-2);
+    /* color: var(--main-color); */
+    background-color: var(--secondary-color);
+}
+
+.alternate--section{
+    padding: var(--space-2);
+    margin: var(--space-2);
+    border-radius: 5px;
+    /* color: var(--secondary-color); */
+    background-color: var(--main-color);
+    
 }
