@@ -1,0 +1,33 @@
+/* this is a reuseable component library which you can use for all your projects.  just include the css is your main html and you can start reusing the classes */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*css resets */
+
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+:root{
+    font-size: 16px;
+    --heading-font: "Montserrat";
+    --text-font: "Roboto";
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+}
+
+body{
+    font-family: var(--text-font), sans-serif;
+}
