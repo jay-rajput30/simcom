@@ -275,3 +275,55 @@ figure{
     border: 2px solid rgb(211, 207, 207);
     left:-47px;
 }
+
+/* buttons */
+.primary--button{
+    border: none;
+    /* border: 2px solid var(--secondary-color); */
+    background-color: var(--ascent-color);
+    padding: var(--space-1) var(--space-2);
+    margin: var(--space-2);
+    border-radius: 5px;
+    /* color: var(--secondary-color); */
+    transition: transform 0.3s linear;
+}
+
+.primary--button:active{
+    transform : scale(0.95);
+}
+
+
+.secondary--button{
+    border: none;
+    /* border: 2px solid var(--main-color); */
+    background-color: var(--secondary-color);
+    padding: var(--space-1) var(--space-2);
+    margin: var(--space-2);
+    border-radius: 5px;
+    color: var(--main-color); 
+    transition: transform 0.3s linear;
+}
+
+.secondary--button:active{
+    transform : scale(0.95);
+}
+.link--button{
+    display: inline-block;
+    appearance: button;
+    border: 2px solid var(--main-color);
+    padding: var(--space-1) var(--space-2);
+    margin: var(--space-2);
+    border-radius: 5px;
+
+}
+
+.icon--button{
+    border: none;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+
+}
+
+
+
