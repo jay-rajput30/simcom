@@ -81,6 +81,11 @@ h5,h6{
     color: var(--main-color);
 } */
 
+
+.main--section{
+    border-bottom: 2px solid rgb(48, 46, 46);
+    margin: var(--space-2)
+}
 /* text styles */
 .text--color__primary{
     color: var(--main-color);
@@ -109,4 +114,164 @@ h5,h6{
     /* color: var(--secondary-color); */
     background-color: var(--main-color);
     
+}
+
+/* avatar component */
+figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 1rem;
+
+}
+
+.avatar h2{
+    text-align: center;
+}
+
+/* alerts */
+
+.primary--alert{
+    border: 2px dotted var(--secondary-color);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+.secondary--alert{
+    border: 2px dotted var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+.success--alert{
+    border: 2px dotted #8abea7 ;
+    background-color: #D1E7DD;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+.danger--alert{
+    border: 2px dotted #ee9199;
+    background-color: #e2bfc2;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+.info--alert{
+    border: 2px dotted #5fa5bb ;
+    background-color: #b1ccd4;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+.light--alert{
+    border: 1px dotted rgba(0, 0, 0, 0.253);
+    background-color:whitesmoke;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+.dark--alert{
+    border: 1px dotted whitesmoke ;
+    background-color:rgba(0, 0, 0, 0.829);
+    color: whitesmoke;
+    padding: 0.7rem;
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 3px;
+}
+
+
+/* badges */
+.primary--badge{
+    margin: 1rem;
+    display: inline-block;
+    height: 25x;
+    width: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+.primary--badge{
+    margin: 0.4rem auto;
+    display: inline-block;
+    height: 25x;
+    width: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+.secondary--badge{
+    margin: 0.4rem auto;
+    display: inline-block;
+    height: 25x;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color:var(--secondary-color);
+    color: var(--main-color);
+    padding: 0.5rem;
+}
+
+.alternate--badge{
+    margin: 0.4rem auto;
+    display: inline-block;
+    height: 25x;
+    width: 25px;
+    border-radius: 50%;
+    background-color:var(--ascent-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+.dark--badge{
+    margin: 0.4rem auto;
+    display: inline-block;
+    height: 25x;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgba(58, 54, 54, 0.849);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+.icon--badge{
+    height: 4px;
+    width: 4px;
+    padding: 0.3em;
+    font-size: 0.6em;
+    position: relative;
+    top:-20px;
+    background-color: rgb(91, 184, 88);
+    border-radius: 50%;
+    border: 2px solid rgb(211, 207, 207);
+    left:-47px;
 }
