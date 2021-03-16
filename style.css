@@ -365,7 +365,6 @@ figure {
 
 .card--overlay {
   padding: var(--space-2);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,10 +376,11 @@ figure {
 }
 
 .card--overlay__text {
+    cursor: pointer;
   color: whitesmoke;
-  font-size: bolder;
+  /* font-size: bolder; */
   opacity: 0;
 }
-.card--overlay:hover .card--overlay__text {
+.card--overlay__text:hover {
   opacity: 1;
 }
