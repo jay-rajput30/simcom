@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simcom library</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <h1>Simcom library</h1>
@@ -76,25 +79,48 @@
     <!-- badges -->
     <h2>badges</h2>
     <section class="main--section">
-      <span class="primary--badge">1</span>
-      <span class="secondary--badge">2</span>
-      <span class="alternate--badge">4</span>
-      <span class="dark--badge">3</span>
-      <img class="avatar" src="https://thispersondoesnotexist.com/image" />
-      <div class="icon--badge"></div>
+      <span class="badge primary--badge">1</span>
+      <span class="badge secondary--badge">2</span>
+      <span class="badge alternate--badge">4</span>
+      <span class="badge dark--badge">3</span>
+
+      <!-- need to figure out icon badge -->
+      <!-- <div class="icon--badge">
+        <img class="icon--badge--avatar" src="https://thispersondoesnotexist.com/image" />
+      </div> -->
     </section>
 
     <!-- buttons -->
     <h2>buttons</h2>
     <section class="main--section">
-      <button class="primary--button">primary</button>
-      <button class="secondary--button">secondary</button>
-      
+      <button class="button primary--button">primary</button>
+      <button class="button secondary--button">secondary</button>
+
       <!-- todo: need to figure out best way to implement link button -->
-      <a class="link--button">link</a>
+      <!-- <a class="link--button">link</a> -->
 
       <!-- todo: need to figure out icon button -->
-      <i class="fa fa-check-square icon--button"></i>  
+      <i id="icon--button" class="fa fa-check-square"></i>
+      <button class="button floating--button">+</button>
+    </section>
+    <h2>cards</h2>
+    <section class="main--section">
+      <article class="card">
+        <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div>
+        <span class="card--badge">new</span>
+        <div class="card--bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</div>
+      </article>
+      <article class="card">
+        <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div>
+        <button class="card--dismiss">X</button>
+        <div class="card--bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</div>
+      </article>
+
+      <article class="card card--overlay">
+        <!-- <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div> -->
+        <button class="card--dismiss">X</button>
+        <div class="card--overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</div>
+      </article>
     </section>
   </body>
 </html>
