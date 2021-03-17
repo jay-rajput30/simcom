@@ -325,6 +325,7 @@ figure {
   border-radius: 5px;
   margin: var(--space-2);
   width: 15rem;
+  height: 300px;
   background-color: var(--secondary-color);
 }
 
@@ -364,23 +365,112 @@ figure {
 }
 
 .card--overlay {
-  padding: var(--space-2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   
+  /* padding: var(--space-2); */
   height: 300px;
   width: 15rem;
-  background: url("https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.card--overlay > img{
+  border-radius: 5px;
+  object-fit: fill;
+  max-width: 100%;
+  height: 100%;
+ 
 }
 
 .card--overlay__text {
-    cursor: pointer;
+  padding: var(--space-2);
+      position: absolute;
   color: whitesmoke;
-  /* font-size: bolder; */
-  opacity: 0;
+  font-weight: bolder;
+
 }
-.card--overlay__text:hover {
-  opacity: 1;
+
+.card--text--only{
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-1);
+  box-shadow: 5px 5px 14px 2px var(--main-color);
 }
+
+.card--text--only button{
+  color: var(--main-color); 
+}
+
+
+/* image styles   */
+
+.rounded--image{
+  margin:  var(--space-1);
+}
+
+.rounded--image img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: auto;
+  max-width: 50%;
+}
+
+.responsive--image{
+  margin: var(--space-2);
+}
+
+.responsive--image img{
+  object-fit: cover;
+  height: auto;
+  max-width: 90%;
+}
+
+/* input styles */
+.input{
+  outline: none;
+  border: none;
+  padding: var(--space-1) var(--space-2);
+  margin: var(--space-2);
+  text-align: center;
+  
+}
+.standard--input{
+  caret-color: var(--main-color);
+  border-bottom: 2px solid rgb(119, 117, 117);
+  padding: var(--space-1) var(--space-2);
+  margin: var(--space-2);
+  transition: border-bottom 0.3s linear;
+ 
+}
+
+.standard--input:focus{
+  border-bottom: 2px solid var(--main-color);
+}
+
+.standard--input:focus .error{
+  border-bottom: 2px solid #EF4444;
+}
+
+   
+.filled--input{
+  caret-color: var(--main-color);
+background-color: var(--secondary-color);
+ border-radius: 5px;
+ border: 2px solid var(--main-color);
+ border-radius: 5px;
+}
+
+.outline--input{
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+}
+
+
+.error{
+ 
+}
+

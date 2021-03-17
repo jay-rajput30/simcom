@@ -106,21 +106,45 @@
     <h2>cards</h2>
     <section class="main--section">
       <article class="card">
-        <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div>
+        <figure class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></figure>
         <span class="card--badge">new</span>
         <div class="card--bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</div>
       </article>
       <article class="card">
-        <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div>
+        <figure class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></figure>
         <button class="card--dismiss">X</button>
         <div class="card--bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</div>
       </article>
 
-      <article class="card card--overlay">
+
+      <!-- TODO: on hover grayscale is not working -->
+      <figure class="card card--overlay">
+        <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of a car">
         <!-- <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div> -->
         <button class="card--dismiss">X</button>
         <p class="card--overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</p>
+      </figure>
+
+      <article class="card card--text--only">
+        <button class="card--dismiss">X</button>
+        <p class="card--bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</p>
       </article>
+
+    </section>
+    <h2>responsive images</h2>
+    <section class="main--section">
+      <figure class="rounded--image"><img src="https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="nature image"></figure>
+      <figure class="responsive--image"><img src="https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="nature image"></figure>
+
+    </section>
+
+    <section class="main--section">
+      <input type="text" id="standard--input" class="input standard--input error">
+      <!-- <label class="standard--input--label" for="standard--input">text</label> -->
+      <input type="text" id="filled--input" class=" input filled--input">
+      <!-- <label class="filled--input--label" for="filled--input">text</label> -->
+      <input type="text" id="outline--input" class="input outline--input">
+      <!-- <label class="outline--input--label" for="outline--input">text</label> -->
     </section>
   </body>
 </html>
