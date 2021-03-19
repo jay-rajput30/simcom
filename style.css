@@ -294,6 +294,33 @@ figure {
   font-size: 30px;
 }
 
+#icon--badge--button{
+  padding: var(--space-1);
+  /* border: 1px solid orange; */
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.icon--badge--button{
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+  
+  /* border: 1px solid green; */
+}
+
+#icon--badge{
+  z-index: 1;
+  position:absolute;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+top: -10px;
+right: 7px;
+font-size: var(--length-sm2);
+padding: 5px;
+border-radius: 50%;
+}
+
 .floating--button {
   position: relative;
   box-shadow: 9px 9px 14px -6px #251f6d;
