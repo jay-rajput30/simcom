@@ -83,9 +83,6 @@ h6 {
   color: var(--main-color);
 }
 
-/* p{
-    color: var(--main-color);
-} */
 
 .main--section {
   border-bottom: 2px solid rgb(48, 46, 46);
@@ -248,7 +245,7 @@ figure {
   top: 0;
   border: 2px solid red;
 }
-/* buttons */
+/* button styles */
 
 .button {
   border: none;
