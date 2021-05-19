@@ -634,13 +634,14 @@ nav {
   font-family: var(--heading-font);
   text-transform: uppercase;
   color: var(--secondary-color);
-  transition: border-bottom 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .nav--items:hover a {
   /* border-bottom: 2px solid var(--secondary-color); */
   font-size: 1rem;
   font-weight: bold;
+  transform: scale(1.2);
 }
 
 /* ecommerce rating styles */
