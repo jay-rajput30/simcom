@@ -638,7 +638,7 @@ nav {
 }
 
 .nav--items:hover a {
-  border-bottom: 2px solid var(--secondary-color);
+  /* border-bottom: 2px solid var(--secondary-color); */
   font-size: 1rem;
   font-weight: bold;
 }
